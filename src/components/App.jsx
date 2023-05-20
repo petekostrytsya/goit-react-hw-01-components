@@ -3,6 +3,8 @@ import { Profile } from 'components/Profile/Profile';
 import user from 'components/Profile/user.json';
 import { Statistics } from 'components/Statistics/Statistics';
 import data from 'components/Statistics/data.json';
+import { FriendList } from 'components/FriendList/FriendList';
+import friends from 'components/FriendList/friends.json';
 
 
 
@@ -42,6 +44,17 @@ export const App = () => {
         <Statistics stats={data} />
       </div>
 
+      <div style={{
+        height: '100vh',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: 40,
+        color: '#010101'
+      }}
+      >
+        <FriendList friends={friends} />
+      </div>
     </section>
 
     
