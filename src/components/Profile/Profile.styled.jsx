@@ -6,13 +6,12 @@ export const ContainerProfile = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    height: 600px;
+    width: 320px;
+    height: 520px;
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 5px;
     border: 2px solid rgb(9, 16, 110);
-    margin-bottom: 40px;
     transition: all ease-in-out 0.5s;
 
     &:hover,
@@ -32,6 +31,7 @@ export const Photo = styled.img`
     border-radius: 50%;
     object-fit: cover;
     margin-top: 20px;
+    transition: all ease-in-out 0.25s;
 
     &:hover,
     &:focus {
@@ -70,7 +70,7 @@ export const StatsItem = styled.li`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    margin-top: -40px;
 `
 
 export const Label = styled.span`

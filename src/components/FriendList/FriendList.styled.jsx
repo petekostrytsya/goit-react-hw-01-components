@@ -31,13 +31,14 @@ export const FriendsItem = styled.li`
 `
 
 export const Photo = styled.img`
-    width: 240px;
-    height: 240px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin-bottom: 20px;
 `
 
 export const Name = styled.p`
+    font-size: 28px;
     font-weight: bold;
 `
 

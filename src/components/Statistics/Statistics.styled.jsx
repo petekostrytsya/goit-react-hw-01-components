@@ -5,10 +5,10 @@ export const StatisticsSection = styled.section`
     padding: 20px;
     border-radius: 4px;
     text-align: center;
-    width: 100%;
+    width: 960px;
     background-color: #fff;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-    margin-bottom: 40px;
+    margin: 0 auto;
 `
 
 export const Title = styled.h2`
