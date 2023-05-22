@@ -33,6 +33,7 @@ export const App = () => {
     
       <TitleTasks>"TransactionHistory"</TitleTasks>
         <TransactionHistory items={transactions} />
+      
     </TaskNumberOne>    
   )
 }
