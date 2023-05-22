@@ -11,16 +11,23 @@ export const StatsItem = styled.li`
     width: 100%;
     max-width: 200px;
     text-align: center;
+    transition: all ease-in-out 0.5s;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: inset 0 0 10px 0 rgba(201, 200, 200, 0.5);
+    }
 `
 
 export const Label = styled.span`
-    margin-bottom: 10px;
-    font-size: 12px;
-    color: #888;
+    font-size: 24px;
+    color: yellow;
+    margin-bottom: 24px;
 `
 
 export const Percentage = styled.span`
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 700;
-    color: #000;
+    color: blue;
 `
