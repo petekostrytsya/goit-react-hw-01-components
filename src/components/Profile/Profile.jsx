@@ -1,34 +1,36 @@
 import PropTypes from "prop-types";
+import { ContainerProfile, DescriptionProfile, Photo, Name, Tag, Location, StatsList, StatsItem, Label, Quantity } from "./Profile.styled";
 
 
 export const Profile = ({ username, tag, location, avatar, stats: {followers, views, likes} }) => {
-  return (  <div className ="profile">
-  <div className ="description">
-    <img
+  return (
+<ContainerProfile>
+  <DescriptionProfile>
+    <Photo
       src={avatar}
       alt="User avatar"
       class="avatar"
     />
-    <p className ="name">{username}</p>
-    <p className ="tag">@{tag}</p>
-    <p className ="location">{location}</p>
-  </div>
+    <Name>{username}</Name>
+    <Tag>@{tag}</Tag>
+    <Location>{location}</Location>
+  </DescriptionProfile>
 
-  <ul className ="stats">
-    <li>
-        <span className="label">{followers}</span>
-      <span className ="quantity">1000</span>
-    </li>
-    <li>
-      <span className ="label">{views}</span>
-      <span className ="quantity">2000</span>
-    </li>
-    <li>
-      <span className ="label">{likes}</span>
-      <span className ="quantity">3000</span>
-    </li>
-  </ul>
-</div>
+  <StatsList>
+    <StatsItem>
+      <Label>Followers</Label>
+      <Quantity>{followers}</Quantity>
+    </StatsItem>
+    <StatsItem>
+      <Label>Views</Label>
+      <Quantity>{views}</Quantity>
+    </StatsItem>
+    <StatsItem>
+      <Label>Likes</Label>
+      <Quantity>{likes}</Quantity>
+    </StatsItem>
+  </StatsList>
+</ContainerProfile>
     )
 }
 
