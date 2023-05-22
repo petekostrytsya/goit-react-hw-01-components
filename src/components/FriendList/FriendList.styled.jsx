@@ -43,16 +43,16 @@ export const Name = styled.p`
 
 export const Online = styled.span`
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: green;
 `
 
 export const Ofline = styled.span`
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color: red;
 `

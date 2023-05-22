@@ -8,7 +8,7 @@ export const FriendList = ({ friends }) => {
         <FriendsItem key={id}>
           <Photo src={avatar} alt={name} width="48" />
           <Name>{name}</Name>
-          <span className={`status ${isOnline ? 'Online' : 'Ofline'}`}></span>
+          { isOnline ? <Online /> : <Ofline /> }
         </FriendsItem>
       ))}
     </FriendsList>
