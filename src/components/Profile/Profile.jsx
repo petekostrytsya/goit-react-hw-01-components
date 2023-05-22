@@ -9,7 +9,6 @@ export const Profile = ({ username, tag, location, avatar, stats: {followers, vi
     <Photo
       src={avatar}
       alt="User avatar"
-      class="avatar"
     />
     <Name>{username}</Name>
     <Tag>@{tag}</Tag>
@@ -35,14 +34,14 @@ export const Profile = ({ username, tag, location, avatar, stats: {followers, vi
 }
 
 Profile.propTypes = {
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
-  stats: PropTypes.objectOf(
-    PropTypes.exact ({
-    label: PropTypes.string.isRequired,
-    quantity: PropTypes.number.isRequired,
-  }),)
-}
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
+};
 

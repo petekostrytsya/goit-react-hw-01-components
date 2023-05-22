@@ -7,22 +7,15 @@ import { FriendList } from 'components/FriendList/FriendList';
 import friends from 'components/FriendList/friends.json';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 import transactions from 'components/TransactionHistory/transactions.json';
+import { TaskNumberOne, TitleTasks } from 'App.styled';
 
 
 
 export const App = () => {
   return (
-    <section>
-      <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    > <div>
+    <TaskNumberOne>
+
+      <TitleTasks>"Profile"</TitleTasks>
         <Profile
           username={user.username}
           tag={user.tag}
@@ -30,48 +23,17 @@ export const App = () => {
           avatar={user.avatar}
           stats={user.stats}
         />
-      </div>
-      </div> 
       
-      <div style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-      >
+      <TitleTasks>"Statistics"</TitleTasks>
         <Statistics title="Upload stats" stats={data} />
         {/* <Statistics stats={data} /> */}
-      </div>
-
-      <div style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-      >
+      
+      <TitleTasks>"FriendList"</TitleTasks>
         <FriendList friends={friends} />
-      </div>
-
-      <div style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-      >
-        <TransactionHistory items={transactions} />
-      </div>
-    </section>
-
     
+      <TitleTasks>"TransactionHistory"</TitleTasks>
+        <TransactionHistory items={transactions} />
+    </TaskNumberOne>    
   )
 }
 
