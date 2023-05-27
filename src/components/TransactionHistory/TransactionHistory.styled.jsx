@@ -28,6 +28,15 @@ export const TitleHead = styled.th`
 
 export const Row = styled.tr`
   background-color: #f3f2f2;
+  transition: all ease-in-out 0.5s;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: inset 0 0 10px 20px rgba(212, 211, 212, 0.4);
+        background-color: #f5f5f5;
+        scale: 1.01;
+    }
 `
 
 export const Cell = styled.td`
